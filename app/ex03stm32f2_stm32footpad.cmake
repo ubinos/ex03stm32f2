@@ -12,6 +12,12 @@ include(${PROJECT_UBINOS_DIR}/config/ubinos_nucleof207zg.cmake)
 
 include(${PROJECT_LIBRARY_DIR}/seggerrtt_wrapper/config/seggerrtt.cmake)
 
+include(${PROJECT_LIBRARY_DIR}/stm32cubef2_wrapper/config/stm32cubef2.cmake)
+
 include(${CMAKE_CURRENT_LIST_DIR}/ex03stm32f2.cmake)
+
+####
+
+include_directories(${CMAKE_CURRENT_LIST_DIR}/STM32FOOTPAD/Inc)
 
 

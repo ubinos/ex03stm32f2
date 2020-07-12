@@ -1,5 +1,5 @@
-set(INCLUDE__APP                                                                TRUE)
-set(APP__NAME                                                                   "ex03stm32f2")
+set(INCLUDE__APP TRUE)
+set(APP__NAME "ex03stm32f2")
 
 get_filename_component(_tmp_source_dir "${CMAKE_CURRENT_LIST_DIR}" ABSOLUTE)
 

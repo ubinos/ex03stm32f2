@@ -6,6 +6,6 @@ project(ex03stm32f2)
 project_begin()
 project_add_library(ubinos)
 project_add_library(seggerrtt_wrapper)
-project_add_library(stm32cubef2)
+project_add_library(stm32cubef2_wrapper)
 project_end()
 
