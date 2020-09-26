@@ -18,6 +18,8 @@ include(${CMAKE_CURRENT_LIST_DIR}/ex03stm32f2.cmake)
 
 ####
 
-include_directories(${CMAKE_CURRENT_LIST_DIR}/STM32FOOTPAD/Inc)
+string(TOLOWER ${UBINOS__BSP__BOARD_MODEL} _temp_board_name)
+
+include_directories(${CMAKE_CURRENT_LIST_DIR}/arch/arm/cortexm/${_temp_board_name})
 
 
