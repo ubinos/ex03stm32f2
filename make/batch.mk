@@ -8,19 +8,13 @@
 	@echo "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
 	@echo ""
 	@echo ""
-	make -f makefile.mk $@ CONFIG_NAME=ex03stm32f2_stm3221geval
+	make -f makefile.mk $@ CONFIG_DIR=../app CONFIG_NAME=ex03stm32f2_nucleof207zg
 	@echo ""
 	@echo ""
 	@echo "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
 	@echo ""
 	@echo ""
-	make -f makefile.mk $@ CONFIG_NAME=ex03stm32f2_nucleof207zg
-	@echo ""
-	@echo ""
-	@echo "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
-	@echo ""
-	@echo ""
-	make -f makefile.mk $@ CONFIG_NAME=ex03stm32f2_stm32footpad
+	make -f makefile.mk $@ CONFIG_DIR=../app CONFIG_NAME=ex03stm32f2_stm3221geval
 	@echo ""
 	@echo ""
 
@@ -28,31 +22,13 @@
 	@echo "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
 	@echo ""
 	@echo ""
-	make -f makefile.mk $@ CONFIG_DIR=../library/stm32cubef2_wrapper/app CONFIG_NAME=myuart_printf_stm3221geval
+	make -f makefile.mk $@ CONFIG_DIR=../library/seggerrtt_wrapper/app CONFIG_NAME=cli_tester_stm3221geval_seggerrtt
 	@echo ""
 	@echo ""
 	@echo "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
 	@echo ""
 	@echo ""
-	make -f makefile.mk $@ CONFIG_DIR=../library/stm32cubef2_wrapper/app CONFIG_NAME=mygpio_exti_stm3221geval
-	@echo ""
-	@echo ""
-	@echo "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
-	@echo ""
-	@echo ""
-	make -f makefile.mk $@ CONFIG_DIR=../library/stm32cubef2_wrapper/app CONFIG_NAME=mygpio_iotoggle_stm3221geval
-	@echo ""
-	@echo ""
-	@echo "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
-	@echo ""
-	@echo ""
-	make -f makefile.mk $@ CONFIG_DIR=../library/stm32cubef2_wrapper/app CONFIG_NAME=myadc_regularconversion_interrupt_stm3221geval
-	@echo ""
-	@echo ""
-	@echo "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
-	@echo ""
-	@echo ""
-	make -f makefile.mk $@ CONFIG_DIR=../library/stm32cubef2_wrapper/app CONFIG_NAME=myadc_regularconversion_polling_stm3221geval
+	make -f makefile.mk $@ CONFIG_DIR=../library/seggerrtt_wrapper/app CONFIG_NAME=cli_tester_stm32footpad_seggerrtt
 	@echo ""
 	@echo ""
 
@@ -60,19 +36,19 @@
 	@echo "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
 	@echo ""
 	@echo ""
-	make -f makefile.mk $@ CONFIG_DIR=../library/stm32cubef2_wrapper/app CONFIG_NAME=myuart_printf_nucleof207zg
+	make -f makefile.mk $@ CONFIG_DIR=../library/stm32cubef2_wrapper/app CONFIG_NAME=cli_tester_nucleof207zg_rtctick
 	@echo ""
 	@echo ""
 	@echo "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
 	@echo ""
 	@echo ""
-	make -f makefile.mk $@ CONFIG_DIR=../library/stm32cubef2_wrapper/app CONFIG_NAME=mygpio_exti_nucleof207zg
+	make -f makefile.mk $@ CONFIG_DIR=../library/stm32cubef2_wrapper/app CONFIG_NAME=cli_tester_nucleof207zg_rtctick_nostlink
 	@echo ""
 	@echo ""
 	@echo "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
 	@echo ""
 	@echo ""
-	make -f makefile.mk $@ CONFIG_DIR=../library/stm32cubef2_wrapper/app CONFIG_NAME=mygpio_iotoggle_nucleof207zg
+	make -f makefile.mk $@ CONFIG_DIR=../library/stm32cubef2_wrapper/app CONFIG_NAME=cli_tester_stm3221geval_rtctick
 	@echo ""
 	@echo ""
 
